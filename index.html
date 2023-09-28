@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./public/output.css" />
+
+    <title>Frontend Mentor | Easybank landing page</title>
+  </head>
+  <body class="text-lg font-Public relative">
+    <!--navbar-->
+    <nav class="relative z-30 bg-white">
+      <!--flex container-->
+      <div
+        class="container mx-auto flex justify-between items-center pt-5 pb-5 lg:pb-3 px-3 xl:px-24"
+      >
+        <!--logo-->
+        <div>
+          <img src="./images/logo.svg" alt="" />
+        </div>
+
+        <!--menu list-->
+        <div class="space-x-5 hidden lg:block">
+          <a
+            href="#"
+            class="hover:border-b-4 border-LimeGreen py-3 ease-in duration-150"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="hover:border-b-4 border-LimeGreen py-3 ease-in duration-150"
+            >About</a
+          >
+          <a
+            href="#"
+            class="hover:border-b-4 border-LimeGreen py-3 ease-in duration-150"
+            >Contact</a
+          >
+          <a
+            href="#"
+            class="hover:border-b-4 border-LimeGreen py-3 ease-in duration-150"
+            >Blog</a
+          >
+          <a
+            href="#"
+            class="hover:border-b-4 border-LimeGreen py-3 ease-in duration-150"
+            >Careers</a
+          >
+        </div>
+
+        <!--Button-->
+        <div
+          class="border-2 py-2 md:px-5 xl:px-8 rounded-3xl bg-gradient-to-r from-LimeGreen to-BrightCyan text-white hover:ring-4 hover:ring-LimeGreen ease-in-out duration-700 hidden md:block"
+        >
+          <a href="#">Request Invite</a>
+        </div>
+
+        <!--hamburger menu-->
+        <div class="md:hidden">
+          <img
+            src="./images/icon-hamburger.svg"
+            class="hamburger w-10"
+            id="open"
+            alt=""
+          />
+          <img src="./images/icon-close.svg" class="hidden w-6" id="close" />
+        </div>
+      </div>
+      <!--menu list-->
+      <div
+        id="menudisplay"
+        class="menudisplay space-y-3 hidden flex-col justify-center items-center bg-white border-2 py-5 px-40 shadow-2xl absolute z-30 mt-5 transition-all ease-in-out duration-300 text-xl right-2 left-2"
+      >
+        <a
+          href="#"
+          class="hover:border-b-4 border-LimeGreen py-3 ease-in duration-150 bottom-0"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="hover:border-b-4 border-LimeGreen py-3 ease-in duration-150"
+          >About</a
+        >
+        <a
+          href="#"
+          class="hover:border-b-4 border-LimeGreen py-3 ease-in duration-150"
+          >Contact</a
+        >
+        <a
+          href="#"
+          class="hover:border-b-4 border-LimeGreen py-3 ease-in duration-150"
+          >Blog</a
+        >
+        <a
+          href="#"
+          class="hover:border-b-4 border-LimeGreen py-3 ease-in duration-150"
+          >Careers</a
+        >
+      </div>
+    </nav>
+
+    <!--Hero section-->
+    <section class="lg:bg-gray-50 z-20 -mt-36 lg:-mt-0" id="sec">
+      <!--Grid container-->
+      <div
+        class="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 items-center lg:gap-5"
+      >
+        <!--left-->
+        <div
+          class="space-y-8 lg:space-y-5 lg:pl-40 xl:pl-44 font-normal text-center lg:text-left px-3 md:px-8 lg:px-0 md:-mt-32 lg:-mt-0 animate__animated animate__backInLeft"
+        >
+          <h1 class="text-3xl md:text-5xl xl:text-7xl font-bold">
+            Next generation digital banking
+          </h1>
+          <p class="text-xl opacity-50">
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
+          </p>
+          <button
+            class="border-2 py-3 px-10 lg:py-2 lg:px-8 rounded-3xl bg-gradient-to-r from-LimeGreen to-BrightCyan text-white hover:ring-4 hover:ring-LimeGreen ease-in-out duration-700 lg:ml-0 w-fit"
+          >
+            <a href="#">Request Invite</a>
+          </button>
+        </div>
+
+        <!--right-->
+        <div
+          id="img"
+          class="row-start-1 row-end-2 lg:col-start-2 lg:col-end-3 md:-mt-36 lg:-mt-24 xl:-mt-32 lg:pl-28 xl:pl-32 md:pl-14 md:-mr-28 lg:-mr-7 xl:-mr-32"
+        >
+          <img src="./images/image-mockups.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!--Testimonial section-->
+    <section
+      class="py-16 px-3 lg:px-0 lg:py-20 xl:px-44 bg-gray-100 mt-8 md:-mt-40 lg:-mt-20 xl:-mt-28"
+    >
+      <!--container-->
+      <div class="container mx-auto text-center lg:text-left">
+        <!--top text-->
+        <div class="space-y-5 animate__animated animate__zoomIn">
+          <h2 class="text-4xl xl:text-5xl">Why choose Easybank?</h2>
+          <p
+            class="lg:text-xl xl:text-2xl lg:max-w-2xl xl:max-w-3xl opacity-50"
+          >
+            We leverage Open Banking to turn your bank account into your
+            financial hub. Control your finances like never before.
+          </p>
+        </div>
+        <!--Grid container-->
+        <div
+          class="mt-20 grid md:grid-cols-2 lg:grid-cols-4 md:gap-10 lg:gap-6 xl:gap-7 space-y-14 md:space-y-0"
+        >
+          <!--part 1-->
+          <div class="space-y-6 animate__animated animate__backInLeft">
+            <div class="flex justify-center items-center lg:justify-start">
+              <img src="./images/icon-online.svg" alt="" />
+            </div>
+            <h3 class="text-2xl font-semibold">Online Banking</h3>
+            <p class="lg:text-xl xl:text-base opacity-50">
+              Our modern web and mobile applications allow you to keep track of
+              your finances wherever you are in the world.
+            </p>
+          </div>
+
+          <!--part 2-->
+          <div class="space-y-6 animate__animated animate__backInLeft">
+            <div class="flex justify-center items-center lg:justify-start">
+              <img src="./images/icon-budgeting.svg" alt="" />
+            </div>
+            <h3 class="text-2xl font-semibold">Simple Budgeting</h3>
+            <p class="lg:text-xl xl:text-base opacity-50">
+              See exactly where your money goes each month. Receive
+              notifications when you’re close to hitting your limits.
+            </p>
+          </div>
+
+          <!--part 3-->
+          <div class="space-y-6 animate__animated animate__backInLeft">
+            <div class="flex justify-center items-center lg:justify-start">
+              <img src="./images/icon-onboarding.svg" alt="" />
+            </div>
+            <h3 class="text-2xl font-semibold">Fast Onboarding</h3>
+            <p class="lg:text-xl xl:text-base opacity-50">
+              We don’t do branches. Open your account in minutes online and
+              start taking control of your finances right away.
+            </p>
+          </div>
+
+          <!--part 4-->
+          <div class="space-y-6 animate__animated animate__backInLeft">
+            <div class="flex justify-center items-center lg:justify-start">
+              <img src="./images/icon-api.svg" alt="" />
+            </div>
+            <h3 class="text-2xl font-semibold">Open API</h3>
+            <p class="lg:text-xl xl:text-base opacity-50">
+              Manage your savings, investments, pension, and much more from one
+              account. Tracking your money has never been easier.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--article section-->
+    <section>
+      <!--container-->
+      <div
+        class="container mx-auto mt-20 md:mt-0 space-y-7 lg:space-y-10 xl:space-y-16 md:py-12 xl:py-20 xl:px-24"
+      >
+        <h2
+          class="text-center md:text-left text-4xl xl:text-5xl animate__animated animate__backInLeft"
+        >
+          Latest Articles
+        </h2>
+        <!--Cards container-->
+        <div
+          class="grid px-10 md:px-0 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-5 xl:gap-8"
+        >
+          <!--card 1-->
+          <div class="space-y-5 bg-gray-50 shadow-2xl">
+            <img src="./images/image-currency.jpg" class="h-52 w-full" alt="" />
+
+            <div class="p-5">
+              <p class="text-sm opacity-50 mb-3">By Claire Robinson</p>
+              <a
+                href="#"
+                class="md:text-2xl lg:text-lg xl:text-2xl hover:text-LimeGreen transition-colors"
+                >Receive money in any currency with no fees</a
+              >
+              <p class="mt-3">
+                The world is getting smaller and we’re becoming more mobile. So
+                why should you be forced to only receive money in a single …
+              </p>
+            </div>
+          </div>
+
+          <!--card 2-->
+          <div class="space-y-5 bg-gray-50 shadow-2xl">
+            <img
+              src="./images/image-restaurant.jpg"
+              class="h-52 w-full"
+              alt=""
+            />
+
+            <div class="p-5">
+              <p class="text-sm opacity-50 mb-3">By Wilson Hutton</p>
+              <a
+                href="#"
+                class="md:text-2xl lg:text-lg xl:text-2xl hover:text-LimeGreen transition-colors"
+                >Take your Easybank card wherever you go</a
+              >
+              <p class="mt-3">
+                Our simple budgeting feature allows you to separate out your
+                spending and set realistic limits each month. That means you …
+              </p>
+            </div>
+          </div>
+
+          <!--card 3-->
+          <div class="space-y-5 bg-gray-50 shadow-2xl">
+            <img src="./images/image-plane.jpg" class="h-52 w-full" alt="" />
+
+            <div class="p-5">
+              <p class="text-sm opacity-50 mb-3">By Wilson Hutton</p>
+              <a
+                href="#"
+                class="md:text-2xl lg:text-lg xl:text-2xl hover:text-LimeGreen transition-colors"
+                >Take your Easybank card wherever you go</a
+              >
+              <p class="mt-3">
+                We want you to enjoy your travels. This is why we don’t charge
+                any fees on purchases while you’re abroad. We’ll even show you …
+              </p>
+            </div>
+          </div>
+
+          <!--card 4-->
+          <div class="space-y-5 bg-gray-50 shadow-2xl">
+            <img src="./images/image-confetti.jpg" class="h-52 w-full" alt="" />
+
+            <div class="p-5">
+              <p class="text-sm opacity-50 mb-3">By Claire Robinson</p>
+              <a
+                href="#"
+                class="md:text-2xl lg:text-lg xl:text-2xl hover:text-LimeGreen transition-colors"
+                >Our invite-only Beta accounts are now live!</a
+              >
+              <p class="mt-3">
+                After a lot of hard work by the whole team, we’re excited to
+                launch our closed beta. It’s easy to request an invite through
+                the site ...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-blue-950 text-white mt-10 md:mt-0">
+      <div
+        class="container mx-auto py-10 lg:py-16 xl:px-24 xl:py-20 flex flex-col lg:flex-row lg:justify-between lg:items-start space-y-10 md:space-y-20 lg:space-y-0"
+      >
+        <div
+          class="flex flex-col md:flex-row justify-center items-center md:gap-20 md:justify-around lg:gap-16 xl:gap-20 space-y-7 md:space-y-0"
+        >
+          <div class="space-y-16">
+            <img src="./images/logo.svg" alt="" />
+            <div class="flex items-center space-x-4">
+              <img
+                src="./images/icon-facebook.svg"
+                class="hover:cursor-pointer"
+                alt=""
+              />
+              <img
+                src="./images/icon-youtube.svg"
+                class="hover:cursor-pointer"
+                alt=""
+              />
+              <img
+                src="./images/icon-twitter.svg"
+                class="hover:cursor-pointer"
+                alt=""
+              />
+              <img
+                src="./images/icon-pinterest.svg"
+                class="hover:cursor-pointer"
+                alt=""
+              />
+              <img
+                src="./images/icon-instagram.svg"
+                class="hover:cursor-pointer"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col space-y-3 justify-center items-center md:justify-start md:items-start"
+          >
+            <a href="#" class="hover:text-LimeGreen">About Us</a>
+            <a href="#" class="hover:text-LimeGreen">Contact</a>
+            <a href="#" class="hover:text-LimeGreen">Blog</a>
+          </div>
+
+          <div
+            class="flex flex-col space-y-3 justify-center items-center md:justify-start md:items-start"
+          >
+            <a href="#" class="hover:text-LimeGreen">Careers</a>
+            <a href="#" class="hover:text-LimeGreen">Support</a>
+            <a href="#" class="hover:text-LimeGreen">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div class="space-y-10 flex justify-center items-center flex-col">
+          <button
+            class="border-2 py-3 px-10 lg:py-2 lg:px-8 rounded-3xl bg-gradient-to-r from-LimeGreen to-BrightCyan text-white hover:ring-4 hover:ring-LimeGreen ease-in-out duration-700 lg:ml-0 w-fit"
+          >
+            <a href="#">Request Invite</a>
+          </button>
+          <p>© Easybank. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
